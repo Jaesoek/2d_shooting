@@ -1,0 +1,234 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="헤더 파일">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Manager">
+      <UniqueIdentifier>{257f3b4c-6ec2-47de-8418-9717c4bac816}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameNode">
+      <UniqueIdentifier>{8172869e-ab3a-4a05-9dc0-c291a289d92d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ShootingGame">
+      <UniqueIdentifier>{304eaefc-8bc1-4667-8421-0b620b237ecb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ShootingGame\Bullet">
+      <UniqueIdentifier>{cb1406f1-d7ef-4cc6-8014-1ff269e1946c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameNode\Shader">
+      <UniqueIdentifier>{b56f1b97-4d22-4d10-a74f-eeff0b0faf94}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameNode\Common">
+      <UniqueIdentifier>{b9da1d41-dc82-4601-818e-85d7a716772b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameNode\Util">
+      <UniqueIdentifier>{c7fe5245-cdf6-432e-926b-6d05581df2b3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameNode\Scene">
+      <UniqueIdentifier>{62976b93-b37c-44a2-959b-363d4f4f1e16}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameNode\Tile">
+      <UniqueIdentifier>{98ca97f6-1897-44e6-bd47-2286b7344deb}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="1806APIFramework.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="MainGame.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Intersect.h">
+      <Filter>GameNode\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="CommonMacroFunction.h">
+      <Filter>GameNode\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="Texture.h">
+      <Filter>GameNode\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="D2D.h">
+      <Filter>GameNode\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="keybord.h">
+      <Filter>Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="Font.h">
+      <Filter>Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="Vertex.h">
+      <Filter>GameNode\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera.h">
+      <Filter>GameNode\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Rect.h">
+      <Filter>GameNode\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Collider.h">
+      <Filter>GameNode\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Transform.h">
+      <Filter>GameNode\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Object.h">
+      <Filter>GameNode\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Rocket.h">
+      <Filter>ShootingGame</Filter>
+    </ClInclude>
+    <ClInclude Include="Bullet.h">
+      <Filter>ShootingGame\Bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="Enemy.h">
+      <Filter>ShootingGame</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene.h">
+      <Filter>GameNode\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene_Stage1.h">
+      <Filter>GameNode\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene_Stage2.h">
+      <Filter>GameNode\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="MiniMap.h">
+      <Filter>GameNode\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="MiniRocket.h">
+      <Filter>ShootingGame</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderTarget.h">
+      <Filter>GameNode\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="Tile.h">
+      <Filter>GameNode\Tile</Filter>
+    </ClInclude>
+    <ClInclude Include="IsoTile.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene_Stage3.h">
+      <Filter>GameNode\Scene</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="1806APIFramework.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="MainGame.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Intersect.cpp">
+      <Filter>GameNode\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="Texture.cpp">
+      <Filter>GameNode\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="D2D.cpp">
+      <Filter>GameNode\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="keybord.cpp">
+      <Filter>Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="Font.cpp">
+      <Filter>Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="Vertex.cpp">
+      <Filter>GameNode\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera.cpp">
+      <Filter>GameNode\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Collider.cpp">
+      <Filter>GameNode\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Rect.cpp">
+      <Filter>GameNode\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Transform.cpp">
+      <Filter>GameNode\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Object.cpp">
+      <Filter>GameNode\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Rocket.cpp">
+      <Filter>ShootingGame</Filter>
+    </ClCompile>
+    <ClCompile Include="Bullet.cpp">
+      <Filter>ShootingGame\Bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="Enemy.cpp">
+      <Filter>ShootingGame</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene.cpp">
+      <Filter>GameNode\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene_Stage1.cpp">
+      <Filter>GameNode\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene_Stage2.cpp">
+      <Filter>GameNode\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="MiniMap.cpp">
+      <Filter>GameNode\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="MiniRocket.cpp">
+      <Filter>ShootingGame</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderTarget.cpp">
+      <Filter>GameNode\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="Tile.cpp">
+      <Filter>GameNode\Tile</Filter>
+    </ClCompile>
+    <ClCompile Include="IsoTile.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene_Stage3.cpp">
+      <Filter>GameNode\Scene</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="1806APIFramework.rc">
+      <Filter>리소스 파일</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="small.ico">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="1806APIFramework.ico">
+      <Filter>리소스 파일</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Cursor.cur">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="BaseShader.fx">
+      <Filter>GameNode\Shader</Filter>
+    </None>
+  </ItemGroup>
+</Project>
