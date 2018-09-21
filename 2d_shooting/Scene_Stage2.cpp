@@ -45,7 +45,8 @@ void Scene_Stage2::Release()
 void Scene_Stage2::Update()
 {
 	tile->Update();
-	if (Input->GetKey(VK_LBUTTON) && (isDraw || isObj))
+	if (Input->GetKey(VK_LBUTTON) && 
+		(isDraw || isObj))
 	{
 		for (int i = 0; i < tileX * tileY; i++)
 		{
@@ -56,10 +57,11 @@ void Scene_Stage2::Update()
 			if (Intersect::IsConstainPoint(tile->Getcollider()->GetOBBBox(),
 				_ptMouse))
 			{
-				if (isDraw)
-					UVs[x][y].first = uv;
-				if (isObj)
+				if(isDraw)
+					UVs[x][y].first = uv ;
+				if(isObj)
 					UVs[x][y].second = uv;
+
 				break;
 			}
 		}

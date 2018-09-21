@@ -65,8 +65,6 @@ void MainGame::Release()
 	target->Release();
 	SAFE_DELETE(target);
 
-
-
 	ImGui::DestroyContext();
 	
 	Font::Destroy();
