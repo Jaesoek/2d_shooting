@@ -34,11 +34,11 @@ void Scene_Stage3::Update()
 {
 	mainCamera->Update();
 	mainCamera->DefaultControl();
-
 }
 
 void Scene_Stage3::Render()
 {
+	mainCamera->SetDeviceMatrix();
 	for (int i = 0; i < TILEX; ++i)
 	{
 		for (int j = 0; j < TILEY; ++j)
@@ -46,16 +46,17 @@ void Scene_Stage3::Render()
 			tile->SetPosition(
 				STARTX + 50 * i - 50 * j,
 				STARTY + 25 * i + 25 * j);
-
-			// 화면 바깥으로 나간 놈들은 Render하지 않겠다
-				tile->UpdateCollider();
-			RECT rc = { 0,0,WINSIZE_X, WINSIZE_Y };
+			tile->UpdateCollider();
+			RECT rc = { 0,0,WINSIZE_X,WINSIZE_Y };
 			cameraCollider->SetAABBBox(
-				rc, mainCamera->GetWorld()
-			);
+				rc, mainCamera->GetWorld());
 			RECT tileRc = tile->Getcollider()->GetRect();
-			if (Intersect::IsConstainRect(NULL, tileRc, cameraCollider->GetRect()))
+			if (Intersect::IsConstainRect(
+				NULL,
+				tileRc, 
+				cameraCollider->GetRect()))
 			{
+				
 				Texture::Get()->SetDeivceTexture("Tile");
 				tile->Render();
 			}
