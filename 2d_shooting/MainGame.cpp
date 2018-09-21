@@ -110,6 +110,7 @@ void MainGame::RenderTargets()
 {
 	target->BeginScene();
 	{
+		nowScene->Render();
 	}
 	target->EndScene();
 }
