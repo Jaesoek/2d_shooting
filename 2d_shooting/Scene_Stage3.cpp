@@ -18,7 +18,7 @@ void Scene_Stage3::Init()
 	tile->Init();
 	ZeroMemory(uv, sizeof(D3DXVECTOR2) * TILEX * TILEY);
 
-	Texture::Get()->Init("TileMap", "Images/mario_tile1.png");
+	Texture::Get()->Init("Tile", "Images/mario_tile1.png");
 
 	tile->SetUV(uv[0][0].x, uv[0][0].y, 32.0f, 32.0f);
 	cameraCollider = new Collider(RECT{ 0, 0, 0, 0 });
