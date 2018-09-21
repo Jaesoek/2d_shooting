@@ -45,13 +45,6 @@ void MainGame::Init(HWND hWnd)
 	minimap->Init();
 	minimap->SetTexture(target->GetTexture());
 
-	D3DXVECTOR4 vec[2] =
-	{
-		D3DXVECTOR4(100,100,0,1),
-		D3DXVECTOR4(100,200,0,1)
-	};
-	
-
 }
 
 void MainGame::Release()
@@ -77,28 +70,6 @@ void MainGame::Update()
 {
 
 	nowScene->Update();
-
-	static int index = 0;
-	if (keybord::Get()->GetKeyDown(VK_F2))
-	{
-		if (index == 0)
-		{
-			nowScene->Release();
-			SAFE_DELETE(nowScene);
-			nowScene = new Scene_Stage2;
-			nowScene->Init();
-			index++;
-		}
-		else if (index == 1)
-		{
-			
-			nowScene->Release();
-			SAFE_DELETE(nowScene);
-			nowScene = new Scene_Stage1;
-			nowScene->Init();
-			index--;
-		}
-	}
 }
 void MainGame::UpdateGUI()
 {
@@ -139,7 +110,6 @@ void MainGame::RenderTargets()
 {
 	target->BeginScene();
 	{
-		nowScene->Render();
 	}
 	target->EndScene();
 }
