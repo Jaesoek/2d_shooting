@@ -2,7 +2,7 @@
 class Collider
 {
 private:
-	Rect rc;
+	RECT rc;
 	D3DXVECTOR2 AABBBox[5];
 	D3DXVECTOR2 OBBBox[5];
 

@@ -28,7 +28,7 @@ void IScene::UpdateGUI()
 	{
 		if(ImGui::BeginMenu("View"))
 		{
-			if (ImGui::MenuItem("Interface", "Crtl + F10"))
+			if (ImGui::MenuItem("System", "Crtl + F10"))
 				isSystemShow = !isSystemShow;
 			if(ImGui::MenuItem("Interface","Crtl + F11"))
 				isInterfaceShow = !isInterfaceShow;

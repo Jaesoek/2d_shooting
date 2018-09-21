@@ -74,7 +74,11 @@ void Collider::SetAABBBox(RECT rc, const D3DXMATRIX& matWorld)
 	//¿Þ»ó 
 	AABBBox[4] = AABBBox[0];
 
-	this->rc = { (long)vMin.x, (long)vMin.y, (long)vMax.x, (long)vMax.y };
+	this->rc = { 
+		(LONG)vMin.x,
+		(LONG)vMin.y,
+		(LONG)vMax.x,
+		(LONG)vMax.y };
 }
 
 void Collider::Render()

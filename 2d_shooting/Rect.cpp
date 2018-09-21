@@ -70,3 +70,27 @@ void Rect::UpdateRect()
 	this->right  = position[2].x;
 	this->bottom = position[3].y;
 }
+
+Rect* Rect::operator=(Rect rc)
+{
+	Rect* temp = new Rect;
+
+	temp->left = rc.left;
+	temp->right = rc.right;
+	temp->top = rc.top;
+	temp->bottom = rc.bottom;
+
+	return temp;
+}
+
+Rect * Rect::operator=(RECT rc)
+{
+	Rect* temp = new Rect;
+
+	temp->left = rc.left;
+	temp->right = rc.right;
+	temp->top = rc.top;
+	temp->bottom = rc.bottom;
+
+	return temp;
+}

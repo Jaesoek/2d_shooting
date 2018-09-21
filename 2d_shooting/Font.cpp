@@ -61,3 +61,15 @@ void Font::PrintText(string str, int x, int y, D3DCOLOR color)
 	//DT_NOCLIP -> rect크기 상관없이 출력 
 	//DT_LEFT ->왼쪽 정렬 
 }
+
+void Font::PrintText(D3DXCOLOR color, int x, int y, char * str, ...)
+{
+	char text[64];
+	//va_list ap;
+	//va_start(ap, str);
+	//vsprintf(text + strlen(text), str, ap);
+	//va_end(ap);
+	this->PrintText(str, x, y, color);
+
+
+}

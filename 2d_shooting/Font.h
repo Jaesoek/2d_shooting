@@ -12,6 +12,7 @@ public:
 	static void Destroy();
 	void PrintText(string str, int x, int y,
 		D3DCOLOR color);
+	void PrintText(D3DXCOLOR color, int x, int y, char* str, ...);
 };
 
 

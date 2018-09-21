@@ -15,4 +15,8 @@ public:
 	void SetCenterSize(int width, int height);
 	void UpdateVector();
 	void UpdateRect();
+
+public:
+	Rect* operator=(Rect rc);
+	Rect* operator=(RECT rc);
 };

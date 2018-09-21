@@ -7,6 +7,7 @@ class MainGame
 {
 private:					//º¯¼ö
 	class IScene* nowScene;
+	
 
 	RenderTarget* target;
 	MiniMap* minimap;
