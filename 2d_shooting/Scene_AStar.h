@@ -61,6 +61,10 @@ private:
 
 	ASTAR_STATE _aStarState;
 
+	LPD3DXEFFECT pEffect;
+
+	bool barrive = false;
+
 public:
 	Scene_AStar();
 	~Scene_AStar();
@@ -68,7 +72,21 @@ public:
 	void Init();
 	void Release();
 	void Update();
-	void Render();
+	void Render(class Camera* pCam);
+
+	bool GetArrive(aStarTile* lastTile)
+	{
+		if (barrive)
+		{
+			lastTile = _closeList[lastIndex];
+		}
+		else
+			lastTile = NULL;
+		return lastTile;
+	}
+
+	void SetStart(int x, int y);
+	void SetEnd(int x, int y);
 
 	void TileComposition(); //타일배치
 	void TileInitializing(); //배치후 

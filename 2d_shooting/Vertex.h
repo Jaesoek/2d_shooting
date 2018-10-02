@@ -11,6 +11,16 @@ static struct VertexPT
 {
 	D3DXVECTOR4 position;
 	D3DXVECTOR2 uv;
+
+	VertexPT()
+	{
+
+	}
+	VertexPT(float x, float y, float u, float v)
+	{
+		position = D3DXVECTOR4(x, y, 0, 1);
+		uv = D3DXVECTOR2(u, v);
+	}
 	static const DWORD FVF;
 };
 

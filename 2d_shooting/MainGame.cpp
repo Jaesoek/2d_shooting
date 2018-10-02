@@ -7,7 +7,9 @@
 #include "Scene_Stage1.h"
 #include "Scene_Stage2.h"
 #include "Scene_Stage3.h"
+#include "Scene_Stage4.h"
 
+#include "Scene_AstarTest.h"
 MainGame::MainGame()
 {
 
@@ -35,8 +37,9 @@ void MainGame::Init(HWND hWnd)
 
 /////////////////////////////////////////////////////////
 
-	nowScene = new Scene_Stage3;
+	nowScene = new Scene_AstarTest;
 	nowScene->Init();
+
 
 	target = new RenderTarget();
 	target->Init();
@@ -110,7 +113,6 @@ void MainGame::RenderTargets()
 {
 	target->BeginScene();
 	{
-		nowScene->Render();
 	}
 	target->EndScene();
 }
