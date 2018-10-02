@@ -129,6 +129,15 @@
     <ClInclude Include="Scene_Stage3.h">
       <Filter>GameNode\Scene</Filter>
     </ClInclude>
+    <ClInclude Include="Scene_Stage4.h">
+      <Filter>GameNode\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene_AstarTest.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene_AStar.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -208,6 +217,15 @@
     </ClCompile>
     <ClCompile Include="Scene_Stage3.cpp">
       <Filter>GameNode\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene_Stage4.cpp">
+      <Filter>GameNode\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene_AstarTest.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene_AStar.cpp">
+      <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

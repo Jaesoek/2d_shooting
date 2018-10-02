@@ -12,6 +12,7 @@ public:
 	Rect(int x, int y, int width, int height);
 	~Rect() {};
 
+	void RectMake(int x, int y, int width, int height);
 	void SetCenterSize(int width, int height);
 	void UpdateVector();
 	void UpdateRect();

@@ -14,7 +14,7 @@ public:
 	static void Destroy();
 
 	void Init(string key, string fileName);
-
+	LPDIRECT3DTEXTURE9 GetTexture(string key);
 	void SetDeivceTexture(string key);
 };
 

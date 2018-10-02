@@ -41,6 +41,13 @@ Rect::Rect(int x, int y, int width, int height)
 	index[5] = 3;
 }
 
+void Rect::RectMake(int x, int y, int width, int height)
+{
+	left = x; top = y;
+	right = x + width; bottom = y + height;
+	this->UpdateVector();
+}
+
 void Rect::SetCenterSize(int width, int height)
 {
 	POINT center;

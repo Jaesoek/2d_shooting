@@ -54,6 +54,12 @@ void Texture::Init(string key, string fileName)
 	textures[key] = pTex;
 }
 
+LPDIRECT3DTEXTURE9 Texture::GetTexture(string key)
+{
+	auto iter = textures.find(key);
+	return iter->second;
+}
+
 void Texture::SetDeivceTexture(string key)
 {
 	if (textures.count(key) < 1)

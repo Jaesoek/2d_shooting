@@ -171,9 +171,12 @@
     <ClInclude Include="Object.h" />
     <ClInclude Include="Rocket.h" />
     <ClInclude Include="Scene.h" />
+    <ClInclude Include="Scene_AStar.h" />
+    <ClInclude Include="Scene_AstarTest.h" />
     <ClInclude Include="Scene_Stage1.h" />
     <ClInclude Include="Scene_Stage2.h" />
     <ClInclude Include="Scene_Stage3.h" />
+    <ClInclude Include="Scene_Stage4.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
     <ClInclude Include="Texture.h" />
@@ -200,9 +203,12 @@
     <ClCompile Include="RenderTarget.cpp" />
     <ClCompile Include="Rocket.cpp" />
     <ClCompile Include="Scene.cpp" />
+    <ClCompile Include="Scene_AStar.cpp" />
+    <ClCompile Include="Scene_AstarTest.cpp" />
     <ClCompile Include="Scene_Stage1.cpp" />
     <ClCompile Include="Scene_Stage2.cpp" />
     <ClCompile Include="Scene_Stage3.cpp" />
+    <ClCompile Include="Scene_Stage4.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
